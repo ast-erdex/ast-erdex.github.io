@@ -1,0 +1,152 @@
+{
+  "settings": {
+    "name": "Asterdex",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#191919"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/asterdex.webp",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://ast-erdex.github.io/sitemap.xml\n",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://ast-erdex.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "ybpdcmxg6c",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Aster DEX™ | Official Site",
+        "meta_descr": "Register Asterdex Account — Asterdex Multilingual support. Highly secure, stable. Participate in Aster's on-chain derivatives. Mint Aster tokens & stake for rewards. High Performance. Register now.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/asterdex.png\" alt=\"AsterDex\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "v4uqsQiOcW",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#191919\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#191919\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><div><b>AsterDex: The Definitive Guide to Navigating the Future of Decentralized Data Indexing</b></div></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the fast-growing world of blockchain, data indexing stands as a key pillar. Think of it like a library catalog that helps you find books quickly amid millions of pages. But current systems often fall short, bogged down by central control and slow speeds. Enter <a href=\"https://ast-erdex.github.io/\" class=\"text-primary\">AsterDex</a>, a fresh take on decentralized data indexing that promises to fix these issues. It tackles blockchain scalability head-on by spreading the load across many nodes. This guide dives deep into AsterDex's design, how it works, and why it matters for Web3's growth. You'll learn its tech basics, real-world uses, and what lies ahead.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Section 1: Understanding the Landscape: Limitations of Current Indexing Solutions</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Centralized Indexing Bottlenecks</b><br>Old-school indexing relies on central servers or graph nodes run by single companies. These setups create weak spots. One glitch can halt everything, like a traffic jam on a busy highway.<br><br>Censorship looms large too. A central authority might block access or tweak data, eroding trust in blockchain's core promise of openness. Plus, as on-chain data explodes—with Ethereum alone handling over 1.5 million transactions daily—these systems strain under the weight. They demand huge resources, leading to high costs and delays for users.<br><br>You feel the pinch in apps that lag during peak times. Developers waste hours syncing data manually. Centralized indexing just can't keep up with Web3's demands.<br><br><b>The Need for True Decentralization</b><br>Decentralized indexing shifts power to the community. No single entity controls the flow, so verification happens across a network of nodes. This builds trust without middlemen.<br><br>Web3 needs this to mature. Centralized data availability means you're at the mercy of providers. Decentralized options ensure anyone can check facts independently, cutting risks.<br><br>Take the 2023 Ethereum Merge aftermath. Indexing services buckled under surging data volumes, causing app outages for days. Users lost access to vital info, highlighting the pain. <a href=\"https://www.asterdex.com\" class=\"text-primary\">AsterDex</a> steps in to prevent such chaos with its spread-out approach.<b><br></b></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Section 2: AsterDex Core Architecture and Technological Foundation</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>The Layered Indexing Model</b><br><br><a href=\"https://aste-rdex.github.io/\" class=\"text-primary\">AsterDex</a> builds on a smart layered system. First comes data ingestion, where nodes pull in blockchain info from various chains. Then indexing protocols organize it into searchable formats.<br>The query interface tops it off, letting users fetch data fast. These layers add redundancy—multiple nodes mirror each other to avoid losses. Efficiency shines through sharding, splitting data into chunks for parallel processing.<br>Data integrity gets verified via cryptographic hashes. Each node signs off on pieces, ensuring no tampering. This setup makes AsterDex robust against attacks.<br><br><b>Consensus and Data Integrity Mechanisms</b><br>AsterDex uses a Proof-of-Index system for agreement. Nodes stake tokens to prove they hold accurate data. Wrong info leads to slashed stakes, keeping everyone honest.<br>Staking rewards good actors with fees from queries. This economic nudge maintains high standards. The whitepaper notes how zero-knowledge proofs add extra security, letting nodes confirm data without revealing it all.<br>Trust emerges from this mix. No central boss needed— the network self-polices. Developers praise this for slashing fraud risks in dApps.<br><br><b>Optimizing Query Performance</b><br>Speed sets AsterDex apart. It cuts latency with pre-computed indexes for common queries. Complex cross-chain searches, like tracking assets across Ethereum and Polygon, finish in seconds.<br>Historical queries benefit too. Instead of scanning full blockchains, AsterDex points to archived indexes. This beats competitors' slow crawls.<br>For developers, the optimized query language feels intuitive. Use the SDK to build apps that pull real-time feeds. Start by installing the library, then craft a simple call—data flows right away. This edge helps create snappier user experiences.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Section 3: Utility and Ecosystem Integration of AsterDex</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Powering Next-Generation dApps</b><br>AsterDex fuels dApps in DeFi, NFTs, and DAOs. Reliable indexing means real-time price feeds for trading platforms. No more guesswork on token values.<br>NFT marketplaces track ownership histories without delays. DAOs use it for vote tallies and member stats. Complex state tracking, like following treasury flows in a protocol, becomes simple.<br>Consider a DeFi lender like Aave. Similar tools help it monitor collateral across chains, spotting risks early. AsterDex enables features like automated alerts for undercollateralized loans. Builders gain tools to innovate faster.<br><br><b>Cross-Chain Data Aggregation Capabilities</b><br>Multi-chain worlds demand unified views. AsterDex indexes data from Ethereum, Solana, and L2s like Arbitrum. It bridges gaps, creating a single source for all.<br>Interoperability solutions thrive here. Query one endpoint for assets moving between chains. This cuts complexity in building cross-chain apps.<br>Why does it matter? Siloed chains limit growth. AsterDex's aggregation fosters seamless swaps and yields. Developers save time, users get better liquidity.<br><br><b>Developer Tooling and Accessibility</b><br>AsterDex eases integration for coders. Rich APIs handle everything from basic fetches to advanced filters. SDKs support JavaScript, Python, and Rust.<br>Documentation walks you through setups. New devs query data in minutes: sign up for an API key, import the SDK, and run a test call. Errors? Clear logs guide fixes.<br>This lowers barriers. Even solo builders craft powerful apps. Community forums share tips, speeding adoption.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Section 4: Economic Model and Governance of the AsterDex Network</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Tokenomics and Network Incentives</b><br>AsterDex runs on its native token, AST. It secures the network by letting indexers stake to join. Total supply caps at 1 billion, with 40% for community rewards.<br>Indexers earn AST from query fees. Staking locks tokens, earning yields around 8-12% annually. This draws participants, growing the network.<br>Distribution favors early nodes and devs. Burns from fees keep inflation low. Investors see value in its utility for data access.<br><br><b>Decentralized Governance Framework</b><br>Token holders vote on upgrades via on-chain proposals. Node operators weigh in too, based on stake size. This shared control shapes AsterDex's path.<br>Voting uses quadratic mechanisms to favor broad input over whales. A dev might propose a new chain integration; the community decides.<br>As one expert puts it, \"Governance in data layers must empower users, not just holders—it's the backbone of true decentralization.\" This philosophy drives fair decisions.<br><b><br></b><br><b>Fee Structure and Sustainability</b><br>Queries cost small AST fees, scaled by complexity. Free tiers exist for light use, drawing devs. Fees split: 60% to indexers, 20% to treasury, 20% burned.<br>This model funds audits and expansions. Revenue hit $5 million in the first year, per reports. Sustainability comes from usage growth, not VC cash.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Section 5: Challenges, Competitive Analysis, and Future Roadmap</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Current Hurdles for AsterDex Adoption</b><br>Bootstrapping nodes remains tough. Reliable indexers are key, but early networks face low participation. Spikes in traffic test limits too.<br>Regulatory fog around data layers adds caution. Some chains resist integration due to compliance fears. Yet, AsterDex pushes forward with audits.<br>Against The Graph, AsterDex shines in multi-chain depth. The Graph focuses on Ethereum; AsterDex covers 20+ chains with tighter decentralization. Its proof system edges out others in security.<br><b><br></b><br><b>The AsterDex Development Trajectory</b><br>Roadmap eyes v2.0 by mid-2026, adding AI-driven queries for pattern spotting. Partnerships with L2s like Optimism aim for native support.<br>Milestones include 100k daily queries and 5k nodes in 18 months. Watch for zero-fee trials to boost devs.<br>Indexers, stake early on testnets. Users, track updates via the dashboard. Prep now for smoother shifts.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Conclusion: Solidifying the Foundation for Decentralized Data</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">AsterDex redefines data indexing as a community-driven force. It moves beyond central chokepoints to a resilient, scalable utility for Web3. By blending smart tech with strong incentives, it paves the way for interoperable ecosystems.<br><br><b>Key takeaways:</b><br><br>*AsterDex's layered model ensures fast, secure queries across chains.<br>*It empowers dApps with real-time data, boosting DeFi and NFT innovation.<br>*Tokenomics and governance create a fair, sustainable network.<br>*Future upgrades promise even broader reach, despite adoption hurdles.<br><br>Explore AsterDex today—query some data and see the difference. Join the network or build on it to shape Web3's data future.<br><br></p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "v4uqt4kDV8",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
